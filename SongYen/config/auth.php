@@ -40,6 +40,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'ns' => [
+            'driver' => 'jwt',
+            'provider' => 'nhansu',
+            'hash' => false,
+        ],
+        'nd' => [
+            'driver' => 'jwt',
+            'provider' => 'nguoidung',
+            'hash' => false,
+        ],
     ],
 
     /*
@@ -63,6 +73,15 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'nhansu' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\NhanSu::class,
+            'ttl' => 1,
+        ],
+        'nguoidung' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\NguoiDung::class,
         ],
 
         // 'users' => [
@@ -111,5 +130,5 @@ return [
     */
 
     'password_timeout' => 10800,
-
+    'remember' => 'true',
 ];

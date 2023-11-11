@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class DichVu extends Model
+{
+    use HasFactory;
+    protected $table = 'dichvu';
+    protected $fillable = [
+        'MaDichVu',
+        'TenDichVu',
+        'MoTaDichVu',
+    ];
+}
