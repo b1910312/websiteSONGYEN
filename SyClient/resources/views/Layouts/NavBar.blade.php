@@ -22,16 +22,14 @@
                            <div class="smallmenu bg bg-white p-2" id="smallmenuSKTT"
                                style="display: none; position: absolute; margin-left: 180px; border-radius: 15px; top: 0px   ">
                                <a href="{{ route('SKTT_TimHieu') }}" class="dropdown-item">Thấu Hiểu</a>
-                               <a href="{{ route('SKTT_Test') }}" class="dropdown-item">Các bài test</a>
-                               <a href="{{ route('SKTT_ChiTietTest') }}" class="dropdown-item">Thực hiện test</a>
+                               <a href="{{ route('SKTT_Test') }}" class="dropdown-item">Trắc nghiệm</a>
                                <a href="{{ route('SKTT_KhoaHoc') }}" class="dropdown-item">Khóa học</a>
                                <a href="{{ route('SKTT_HoTro') }}" class="dropdown-item">Hỗ trợ</a>
-                               <a  class="dropdown-item dropdown-toggle" id="NKTT">Nhật ký tinh
+                               <a class="dropdown-item dropdown-toggle" id="NKTT">Nhật ký tinh
                                    thần</a>
                                <div class="smallmenu ms-4 m-1" id="smallmenuNKTT" style="display: none">
                                    <a href="{{ route('NKTT_DangKy') }}" class="dropdown-item">Đăng ký</a>
-                                   <a href="{{ route('NKTT_DanhSach') }}" class="dropdown-item">Các bài test</a>
-                                   <a href="{{ route('NKTT_Viet') }}" class="dropdown-item">Thực hiện test</a>
+                                   <a href="{{ route('NKTT_DanhSach') }}" class="dropdown-item">Viết nhật ký</a>
                                </div>
                            </div>
 
@@ -42,8 +40,7 @@
                            <div class="smallmenu bg bg-white p-2" id="smallmenuTLHD"
                                style="display: none; position: absolute; margin-left: 180px; border-radius: 15px; top: 0px  ">
                                <a href="{{ route('TLHD_HieuNhau') }}" class="dropdown-item">Hiểu Nhau</a>
-                               <a href="{{ route('TLHD_Test') }}" class="dropdown-item">Các bài test</a>
-                               <a href="{{ route('TLHD_ChiTietTest') }}" class="dropdown-item">Thực hiện test</a>
+                               <a href="{{ route('TLHD_Test') }}" class="dropdown-item">Trắc nghiệm</a>
                                <a href="{{ route('TLHD_KhoaHoc') }}" class="dropdown-item">Khóa học</a>
                                <a href="{{ route('TLHD_HoTro') }}" class="dropdown-item">Hỗ trợ</a>
                            </div>
@@ -54,41 +51,48 @@
                                học giới tính</a>
                            <div class="smallmenu bg bg-white p-2" id="smallmenuTLHGT"
                                style="display: none; position: absolute; margin-left: 180px; border-radius: 15px; top: 0px  ">
-                               <a href="{{ route('TLHGT_HieuMinh')}}" class="dropdown-item">Hiểu Mình</a>
-                               <a href="{{ route('TLHGT_Test')}}" class="dropdown-item">Các bài test</a>
-                               <a href="{{ route('TLHGT_ChiTietTest')}}" class="dropdown-item">Thực hiện test</a>
-                               <a href="{{ route('TLHGT_KhoaHoc')}}" class="dropdown-item">Khóa học</a>
-                               <a href="{{ route('TLHGT_HoTro')}}" class="dropdown-item">Hỗ trợ</a>
+                               <a href="{{ route('TLHGT_HieuMinh') }}" class="dropdown-item">Hiểu Mình</a>
+                               <a href="{{ route('TLHGT_Test') }}" class="dropdown-item">Trắc nghiệm</a>
+                               <a href="{{ route('TLHGT_KhoaHoc') }}" class="dropdown-item">Khóa học</a>
+                               <a href="{{ route('TLHGT_HoTro') }}" class="dropdown-item">Hỗ trợ</a>
                            </div>
                        </div>
-                       
+
                    </div>
                </div>
                <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kỹ năng sống</a>
-                <div class="dropdown-menu m-0">
-                    <a href="{{ route('KNS_TimHieu')}}" class="dropdown-item">Tìm hiểu</a>
-                    <a href="{{ route('KNS_Test')}}" class="dropdown-item">Các bài test</a>
-                    <a href="{{ route('KNS_ChiTietTest')}}" class="dropdown-item">Thực hiện test</a>
-                    <a href="{{ route('KNS_KhoaHoc')}}" class="dropdown-item">Khóa học</a>
-                    <a href="{{ route('KNS_HoTro')}}" class="dropdown-item">Hỗ trợ</a>
-                </div>
-            </div>
-               <div class="nav-item dropdown">
-                   <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hướng nghiệp</a>
+                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kỹ năng sống</a>
                    <div class="dropdown-menu m-0">
-                       <a href="{{ route('HN_HieuNghe')}}" class="dropdown-item">Hiểu nghề</a>
-                       <a href="{{ route('HN_Test')}}" class="dropdown-item">Các bài test</a>
-                       <a href="{{ route('HN_ChiTietTest')}}" class="dropdown-item">Thực hiện test</a>
-                       <a href="{{ route('HN_KhoaHoc')}}" class="dropdown-item">Khóa học</a>
-                       <a href="{{ route('HN_HoTro')}}" class="dropdown-item">hỗ trợ</a>
+                       <a href="{{ route('KNS_TimHieu') }}" class="dropdown-item">Tìm hiểu</a>
+                       <a href="{{ route('KNS_Test') }}" class="dropdown-item">Trắc nghiệm</a>
+                       <a href="{{ route('KNS_KhoaHoc') }}" class="dropdown-item">Khóa học</a>
+                       <a href="{{ route('KNS_HoTro') }}" class="dropdown-item">Hỗ trợ</a>
+                   </div>
+               </div>
+               <div class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hướng nghiệp</a>
+                   <div class="dropdown-menu m-0">
+                       <a href="{{ route('HN_HieuNghe') }}" class="dropdown-item">Hiểu nghề</a>
+                       <a href="{{ route('HN_Test') }}" class="dropdown-item">Trắc nghiệm</a>
+                       <a href="{{ route('HN_KhoaHoc') }}" class="dropdown-item">Khóa học</a>
+                       <a href="{{ route('HN_HoTro') }}" class="dropdown-item">hỗ trợ</a>
                    </div>
                </div>
 
                <a href="{{ route('LienHe') }}" class="nav-item nav-link">Liên hệ</a>
            </div>
-           <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal"
-               data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+           {{-- <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal"
+               data-bs-target="#searchModal"><i class="fa fa-search"></i></button> --}}
+           
+           <div class="nav-item dropdown">
+            <a class="nav-link navbar-brand ms-3" data-bs-toggle="dropdown"> 
+                 <h5 class="m-0">  <i class="fa fa-circle-user fa-2x"></i></h5>
+                </a>
+            <div class="dropdown-menu m-0">
+                <a class="dropdown-item" href="#">Đăng nhập</a>
+                <a class="dropdown-item" href="#">Đăng ký</a>
+            </div>
+        </div>
        </div>
    </nav>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

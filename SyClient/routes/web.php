@@ -26,8 +26,10 @@ Route::get('/lienhe', [LienHe::class, 'index'])->name('LienHe');
 
 Route::group(['prefix' => 'huongnghiep'], function () {
     Route::get('/', [HuongNghiep::class, 'index'])->name('HN_HieuNghe');
+    Route::get('/khoahoc/{id}', [HuongNghiep::class, 'detailKhoaHoc'])->name('HN_ChiTietKhoaHoc');
+    Route::get('/baiviet/{id}', [HuongNghiep::class, 'detailHieuNghe'])->name('HN_BaiViet');
     Route::get('/test', [HuongNghiep::class, 'testPage'])->name('HN_Test');
-    Route::get('/chitiettest', [HuongNghiep::class, 'detailTestPage'])->name('HN_ChiTietTest');
+    Route::get('/chitiettest/{id}', [HuongNghiep::class, 'detailTestPage'])->name('HN_ChiTietTest');
     Route::get('/khoahoc', [HuongNghiep::class, 'KhoaHoc'])->name('HN_KhoaHoc');
     Route::get('/hotro', [HuongNghiep::class, 'HoTro'])->name('HN_HoTro');
 });

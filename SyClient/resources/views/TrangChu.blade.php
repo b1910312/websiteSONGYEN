@@ -1,6 +1,6 @@
 @extends('Layouts.App')
 @section('content')
-    <div class=" py-5 bg-primary hero-header mb-5 ">
+    <div class=" py-5 bg-primary hero-header">
         <div class=" my-5 py-5 px-lg-5">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 text-center text-lg-start">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="bg bg-white pt-2">
         <ul class="uk-subnav uk-subnav-pill w-100 row " uk-switcher="animation: uk-animation-fade">
             <li class="col-4"><a class="btn uk-flex uk-flex-center">
                     <h3 class="text-center">Giới thiệu</h3>
@@ -218,7 +218,7 @@
                                     <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i
-                                                class="fa fa-plus fa-2x text-primary"></i></a>
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
                                         <div class="mt-auto">
                                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                             <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -231,7 +231,7 @@
                                     <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i
-                                                class="fa fa-plus fa-2x text-primary"></i></a>
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
                                         <div class="mt-auto">
                                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                             <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -244,7 +244,7 @@
                                     <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i
-                                                class="fa fa-plus fa-2x text-primary"></i></a>
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
                                         <div class="mt-auto">
                                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                             <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -257,7 +257,7 @@
                                     <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i
-                                                class="fa fa-plus fa-2x text-primary"></i></a>
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
                                         <div class="mt-auto">
                                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                             <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -270,7 +270,7 @@
                                     <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i
-                                                class="fa fa-plus fa-2x text-primary"></i></a>
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
                                         <div class="mt-auto">
                                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                             <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -283,7 +283,7 @@
                                     <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
                                     <div class="portfolio-overlay">
                                         <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i
-                                                class="fa fa-plus fa-2x text-primary"></i></a>
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
                                         <div class="mt-auto">
                                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                             <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -325,7 +325,7 @@
                         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
                             data-wow-delay="0.1s">
                             {{-- <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6> --}}
-                            <h2 class="mt-2">Những điều mà tôi và bạn cùng quan tâm </h2>
+                            <h2 class="mt-2">Những điều mà chúng tôi và bạn cùng quan tâm </h2>
                         </div>
                         <div class="row g-4">
                             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -413,8 +413,8 @@
                             <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
                             <h2 class="mt-2">Meet Our Team Members</h2>
                         </div>
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        {{-- <div class="row g-4">
+                            <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="team-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
@@ -436,7 +436,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="team-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
@@ -458,7 +458,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="team-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
@@ -480,7 +480,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="team-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
@@ -502,7 +502,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="team-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
@@ -524,6 +524,233 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> --}}
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="team-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
+                                            style="width: 75px;">
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square text-primary bg-white my-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <h5 class="fw-bold m-0">Jhon Doe</h5>
+                                        <small>CEO</small>
+                                    </div>
+                                </div>>
+                                </li>
+                            </ul>
+                    
+                        
                         </div>
                     </div>
                 </div>
@@ -603,21 +830,6 @@
 
     </div>
 @endsection
-<style>
-    li.uk-active>a>h5 {
-        color: blue;
-    }
-
-    .uk-subnav>li>a>h3 {
-        color: black;
-        /* Màu chữ mặc định */
-    }
-
-    .uk-subnav>.uk-active>a>h3 {
-        color: white !important;
-        /* Màu chữ khi phần tử được chọn (active) */
-    }
-</style>
 
 <script>
     window.addEventListener('load', function() {

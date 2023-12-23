@@ -154,7 +154,7 @@
         <div class=" my-5 py-5 px-lg-5">
             <div class="row g-5 py-5">
                 <div class="col-12 text-center">
-                    <h1 class="text-white animated zoomIn">{{ $BaiTest['BV'] }}</h1>
+                    <h1 class="text-white animated zoomIn">{{ $BaiViet['BV'] }}</h1>
                     <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
@@ -162,217 +162,63 @@
                             </li>
                             <li class="breadcrumb-item"><a class="text-white" href="{{ route('HN_HieuNghe') }}">Hướng
                                     nghiệp</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="{{ route('HN_HieuNghe') }}">Trắc nghiệm</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">{{ $BaiTest['BV'] }}</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="{{ route('HN_HieuNghe') }}">Hiểu
+                                    nghề</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">{{ $BaiViet['BV'] }}</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-100 ms-auto">
+    <div class="">
         <div class="card p-2 border border-white">
             <div class="row w-100 ms-auto">
-                <div class="col-lg-12 col-md-12 ps-5">
-                    <h2>{{ $BaiTest['BV'] }}</h2>
+                <div class="col-lg-8 col-md-12 ps-5">
+                    <h2>{{ $BaiViet['BV'] }}</h2>
                     <small>
-                        <p>{{ $BaiTest['CD'] }}</p>
+                        <p>{{ $BaiViet['CD'] }}</p>
                     </small>
                     <div class="mt-2">
-                        {{ $BaiTest['ND'] }}
+                        {{ $BaiViet['ND'] }}
                     </div>
-                    <br>
-                    <h3>Nội dung trắc nghiệm</h3>
-                    <div class="container">
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card text-center">
+                        <h2>Danh mục</h2>
+                        <h2>Bài tiết tương tự</h2>
 
-                        <form action="" method="post">
-                            @csrf
-                            <div class="row w-100">
-                                <table class="uk-table uk-table-hover uk-table-divider">
-                                    <thead>
-                                        <tr class="row w-100">
-                                            <th class="col-lg-8 col-md-6 col-6"></th>
-                                            <th class="col-lg-4 col-md-6 col-6 text-center">Lựa chọn</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="row w-100">
-                                            <th class="col-lg-8 col-md-6 col-6">Câu hỏi</th>
-                                            <th class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100 mx-auto">
-                                                    <div class="col">
-                                                        <small>
-                                                            <p>có</p>
-                                                        </small>
-
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <small>
-                                                            <p>không có</p>
-                                                        </small>
-
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <small>
-                                                            <p>không rõ</p>
-                                                        </small>
-
-                                                    </div>
-
-
-                                                </div>
-
-                                            </th>
-
-                                        </tr>
-                                        <tr class="row w-100">
-                                            <td class="col-lg-8 col-md-6 col-6">Câu hỏi 1</td>
-                                            <td class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100">
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer" value="1"
-                                                            class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer" value="2"
-                                                            class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer" value="3"
-                                                            class="form-check-input mx-auto">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="row w-100">
-                                            <td class="col-lg-8 col-md-6 col-6">Câu hỏi 2</td>
-                                            <td class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100">
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer" value="1"
-                                                            class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer" value="2"
-                                                            class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="3" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="row w-100">
-                                            <td class="col-lg-8 col-md-6 col-6">Câu hỏi 3</td>
-                                            <td class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100">
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="1" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="2" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="3" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="row w-100">
-                                            <td class="col-lg-8 col-md-6 col-6">Câu hỏi 4</td>
-                                            <td class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100">
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="1" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="2" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="3" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="row w-100">
-                                            <td class="col-lg-8 col-md-6 col-6">Câu hỏi 5</td>
-                                            <td class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100">
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="1" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="2" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="3" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="row w-100">
-                                            <td class="col-lg-8 col-md-6 col-6">Câu hỏi 6</td>
-                                            <td class="col-lg-4 col-md-6 col-6">
-                                                <div class="row w-100">
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="1" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="2" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                    <div class="form-check col-lg-4 col-md-4 col-4">
-                                                        <input type="radio" id="option3" name="answer"
-                                                            value="3" class="form-check-input mx-auto">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <button type="submit" class="btn btn-primary float-end">
-                                Hoàn thành trắc nghiệm
-                            </button>
-
-                        </form>
+                        <div class="row w-100 mx-auto text-start">
+                            @foreach ($ListBaiVietSame as $item)
+                                <div class="col-lg-6 my-2 col-md-6 col-3 portfolio-item  first wow zoomIn"
+                                    data-wow-delay="0.1s">
+                                    <div class="position-relative rounded overflow-hidden">
+                                        <img class="img-fluid w-100" src="{{ asset($item['img']) }}" alt="">
+                                        <div class="portfolio-overlay">
+                                            <a class="btn btn-light"
+                                                href="{{ route('HN_BaiViet', ['id' => $item['id']]) }}"><i
+                                                    class="fa fa-eye fa-2x text-primary"></i></a>
+                                            <div class="mt-auto">
+                                                <small class="text-white"><i
+                                                        class="fa fa-folder me-2"></i>{{ $item['CD'] }}</small>
+                                                <a class="h5 d-block text-white mt-1 mb-0"
+                                                    href="{{ route('HN_BaiViet', ['id' => $item['id']]) }}">{{ $item['BV'] }}</a>
+                                                <small class="text-white">
+                                                    <p class="Noidung">{{ $item['ND'] }}</p>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
 
             </div>
+
         </div>
+
     </div>
     <div class="p-5 ms-auto bg bg-white border ">
 
@@ -384,8 +230,7 @@
                         <div class="body-copy" style="margin: 0;">
                             <div
                                 style="margin: 0;color: #60666d;font-size: 50px;font-family: sans-serif;line-height: 20px; text-align: left;">
-                                <div class="bottom-padding"
-                                    style="margin-bottom: 0px; line-height: 15px; font-size: 15px;">
+                                <div class="bottom-padding" style="margin-bottom: 0px; line-height: 15px; font-size: 15px;">
                                     &nbsp;</div>
                                 <div class="bottom-padding" style="margin-bottom: 0px; line-height: 7px; font-size: 7px;">
                                     &nbsp;</div>
@@ -393,12 +238,12 @@
                                     <div class="rating"
                                         style="text-align: center; margin: 0; font-size: 50px; width: 100%; margin: 0 auto; margin-top: 10px;">
                                         <div
-                                            style="text-align: center; margin: 0; font-size: 20px;  text-transform: uppercase; letter-spacing: .5px;">
-                                            <h4>Đánh giá bài trắc nghiệm</h4>
+                                            style="text-align: left; margin: 0; font-size: 20px;  text-transform: uppercase; letter-spacing: .5px;">
+                                            <h4>Đánh giá bài viết</h4>
                                         </div>
                                         <div
-                                            style="text-align: center; margin: 0; font-size: 20px;  letter-spacing: .5px;">
-                                            Bạn cảm thấy bài trắc nghiệm của chúng tôi thế nào</div>
+                                            style="text-align: center; margin: 0; font-size: 20px;  text-transform: uppercase; letter-spacing: .5px;">
+                                            Bạn cảm thấy bài viết của chúng tôi thế nào</div>
                                         <table
                                             style="border-collapse: collapse;border-spacing: 0;width: 25%; margin: 0 auto; font-size: 50px; direction: rtl;"
                                             dir="rtl">
@@ -516,34 +361,93 @@
                 </tr>
             </tbody>
         </table>
-        <div class="col-lg-12 col-md-12 mx-auto">
-            <div class="card text-center">
-                <h2>Bài trắc nghiệm tương tự</h2>
-                <div class="row w-100 mx-auto text-start">
-                    @foreach ($ListBaiTestSame as $item)
-                        <div class="col-lg-3 my-2 col-md-3 col-3 portfolio-item  first wow zoomIn" data-wow-delay="0.1s">
-                            <div class="position-relative rounded overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset($item['img']) }}" alt="">
-                                <div class="portfolio-overlay">
-                                    <a class="btn btn-light" href="{{ route('HN_Test', ['id' => $item['id']]) }}"><i
-                                            class="fa fa-eye fa-2x text-primary"></i></a>
-                                    <div class="mt-auto">
-                                        <small class="text-white"><i
-                                                class="fa fa-folder me-2"></i>{{ $item['CD'] }}</small>
-                                        <a class="h5 d-block text-white mt-1 mb-0"
-                                            href="{{ route('HN_Test', ['id' => $item['id']]) }}">{{ $item['BV'] }}</a>
-                                        <small class="text-white">
-                                            <p class="Noidung">{{ $item['ND'] }}</p>
-                                        </small>
-                                    </div>
-                                </div>
+
+        <ul class="uk-comment-list">
+            <h4>Bình luận</h4>
+            <li>
+                <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+                    <header class="uk-comment-header uk-position-relative">
+                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-comment-avatar"
+                                    src="{{ asset('https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png') }}"
+                                    width="80" height="80" alt="">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                        href="#">Author</a></h4>
+                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset"
+                                        href="#">12 days ago</a></p>
                             </div>
                         </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
+                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted"
+                                href="#">Reply</a></div>
+                    </header>
+                    <div class="uk-comment-body">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                            sit amet.</p>
+                    </div>
+                </article>
+                <ul>
+                    <li>
+                        <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1" role="comment">
+                            <header class="uk-comment-header uk-position-relative">
+                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-comment-avatar"
+                                            src="{{ asset('https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png') }}"
+                                            width="80" height="80" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                href="#">Author</a></h4>
+                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset"
+                                                href="#">12 days ago</a></p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a
+                                        class="uk-link-muted" href="#">Reply</a></div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                    sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+                            <header class="uk-comment-header uk-position-relative">
+                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-comment-avatar"
+                                            src="{{ asset('https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png') }}"
+                                            width="80" height="80" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                                href="#">Author</a></h4>
+                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset"
+                                                href="#">12 days ago</a></p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a
+                                        class="uk-link-muted" href="#">Reply</a></div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                    sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <script>
         function limitText(elementClass, maxLength) {
