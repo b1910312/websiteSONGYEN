@@ -52,8 +52,8 @@
         @include('Layouts.Footer')
     </footer>
     <!-- Go to Top Button -->
-     <!-- Back to Top -->
-     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
@@ -75,7 +75,15 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.11/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-  
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
+            plugins: 'image table lists link',
+            toolbar: ' blocks | fontfamily | fontsize | image | bold italic underline lineheight | forecolor backcolor | alignleft aligncenter alignright alignjustify | indent outdent  | undo redo |'
+        });
+    </script>
+
 </body>
 
 </html>

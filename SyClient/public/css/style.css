@@ -679,3 +679,15 @@ h6,
     text-transform: uppercase;
     fill: black;
 }
+.tox .tox-statusbar__path{
+    display: none
+}
+.tox .tox-statusbar__branding{
+    display: none
+}
+.tox .tox-statusbar{
+    display: none;
+}
+.tox .tox-promotion{
+    display: none
+}
