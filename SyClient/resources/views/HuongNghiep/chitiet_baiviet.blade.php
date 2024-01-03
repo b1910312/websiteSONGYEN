@@ -175,17 +175,19 @@
         <div class="card p-2 border border-white">
             <div class="row w-100 ms-auto">
                 <div class="col-lg-8 col-md-12 ps-5">
-                    <h2>{{ $BaiViet['BV'] }}</h2>
-                    <small>
+                    <h1>{{ $BaiViet['BV'] }}</h1>
+                  
                         <p>{{ $BaiViet['CD'] }}</p>
-                    </small>
-                    <div class="mt-2">
-                        {{ $BaiViet['ND'] }}
+              
+                    <div class="mt-2 content">
+                        {!! $BaiViet['ND'] !!}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="card text-center">
                         <h2>Danh mục</h2>
+                        <div id="content-index" class="uk-list text-start ms-5"></div>
+
                         <h2>Bài tiết tương tự</h2>
 
                         <div class="row w-100 mx-auto text-start">
@@ -468,5 +470,22 @@
             // Gọi hàm của bạn ở đây
             limitText('Noidung', 60);
         };
+        $(document).ready(function () {
+        // Find all h3 elements inside elements with class "content"
+        $('.content h3').each(function (index) {
+            // Create an anchor element with a link to the corresponding h3
+            var anchor = $('<a>').attr('href', '.content h3:eq(' + index + ')').text($(this).text());
+
+            // Create an li element with the anchor and append it to the content index
+            $('#content-index').append($('<li>').append(anchor));
+        });
+         // Add click event handler for the links in the content index
+         $('#content-index a').on('click', function (e) {
+            e.preventDefault(); // Prevent default behavior of anchor links
+            var targetId = $(this).attr('href'); // Get the target id from the href attribute
+            var targetElement = $(targetId); // Get the target element
+            $('html, body').animate({ scrollTop: targetElement.offset().top - 100 }, 500); // Scroll to the target element
+        });
+    });
     </script>
 @endsection

@@ -30,6 +30,7 @@ Route::group(['prefix' => 'huongnghiep'], function () {
     Route::get('/baiviet/{id}', [HuongNghiep::class, 'detailHieuNghe'])->name('HN_BaiViet');
     Route::get('/test', [HuongNghiep::class, 'testPage'])->name('HN_Test');
     Route::get('/chitiettest/{id}', [HuongNghiep::class, 'detailTestPage'])->name('HN_ChiTietTest');
+    Route::post('/ketqua/{idTest}/{user}/{idPTL}', [HuongNghiep::class, 'KetquaTestPage'])->name('HN_KetquaTest');
     Route::get('/khoahoc', [HuongNghiep::class, 'KhoaHoc'])->name('HN_KhoaHoc');
     Route::get('/hotro', [HuongNghiep::class, 'HoTro'])->name('HN_HoTro');
 });

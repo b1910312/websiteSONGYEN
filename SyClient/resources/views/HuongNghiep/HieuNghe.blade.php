@@ -99,7 +99,6 @@
             <div class="row w-100">
                 <div class="col-8 mx-auto">
                     @include('Layouts/Rating')
-
                 </div>
             </div>
         </div>

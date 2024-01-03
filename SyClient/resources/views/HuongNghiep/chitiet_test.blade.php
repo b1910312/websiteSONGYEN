@@ -182,10 +182,10 @@
                         {{ $BaiTest['ND'] }}
                     </div>
                     <br>
-                    <h3>Nội dung trắc nghiệm</h3>
+                    <h3 class="text-center">Nội dung trắc nghiệm</h3>
                     <div class="container">
 
-                        <form action="" method="post">
+                        <form action="{{ route('HN_KetquaTest', ['idTest' => 1, 'user' => 2, 'idPTL' => 3]) }}" method="post">
                             @csrf
                             <div class="row w-100">
                                 <table class="uk-table uk-table-hover uk-table-divider">
@@ -363,9 +363,11 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <button type="submit" class="btn btn-primary float-end">
-                                Hoàn thành trắc nghiệm
-                            </button>
+                            <div class="row w-100">
+                                <button type="submit" class="btn btn-primary mx-auto w-25">
+                                    Hoàn thành trắc nghiệm
+                                </button>
+                            </div>
 
                         </form>
                     </div>
@@ -374,177 +376,7 @@
             </div>
         </div>
     </div>
-    <div class="p-5 ms-auto bg bg-white border ">
-
-        <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%;">
-            <tbody>
-                <tr>
-                    <td class="content-padding" style="padding: 0;vertical-align: top">
-                        <div style="margin-bottom: 0px; line-height: 30px; font-size: 30px;">&nbsp;</div>
-                        <div class="body-copy" style="margin: 0;">
-                            <div
-                                style="margin: 0;color: #60666d;font-size: 50px;font-family: sans-serif;line-height: 20px; text-align: left;">
-                                <div class="bottom-padding"
-                                    style="margin-bottom: 0px; line-height: 15px; font-size: 15px;">
-                                    &nbsp;</div>
-                                <div class="bottom-padding" style="margin-bottom: 0px; line-height: 7px; font-size: 7px;">
-                                    &nbsp;</div>
-                                <div style="width: 100%; text-align: center; float: left;">
-                                    <div class="rating"
-                                        style="text-align: center; margin: 0; font-size: 50px; width: 100%; margin: 0 auto; margin-top: 10px;">
-                                        <div
-                                            style="text-align: center; margin: 0; font-size: 20px;  text-transform: uppercase; letter-spacing: .5px;">
-                                            <h4>Đánh giá bài trắc nghiệm</h4>
-                                        </div>
-                                        <div
-                                            style="text-align: center; margin: 0; font-size: 20px;  letter-spacing: .5px;">
-                                            Bạn cảm thấy bài trắc nghiệm của chúng tôi thế nào</div>
-                                        <table
-                                            style="border-collapse: collapse;border-spacing: 0;width: 25%; margin: 0 auto; font-size: 50px; direction: rtl;"
-                                            dir="rtl">
-                                            <tbody>
-                                                <tr>
-                                                    <td style="padding: 0;vertical-align: top;" width="55"
-                                                        class="star-wrapper" lang="x-star-wrapper">
-                                                        <div
-                                                            style="display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;">
-                                                            <a href="http://example.com/?rating=5" class="star"
-                                                                target="_blank" lang="x-star-divbox"
-                                                                style="color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;"
-                                                                tabindex="1">
-                                                                <div lang="x-empty-star"
-                                                                    style="margin: 0;display: inline-block;">☆</div>
-                                                                <div lang="x-full-star"
-                                                                    style="margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;">
-                                                                    ★</div>
-                                                            </a>
-                                                            <a href="http://example.com/?rating=5" class="star-number"
-                                                                target="_blank" lang="x-star-number"
-                                                                style="font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;">5</a>
-                                                        </div>
-                                                    </td>
-                                                    <td style="padding: 0;vertical-align: top" width="55"
-                                                        class="star-wrapper" lang="x-star-wrapper">
-                                                        <div
-                                                            style="display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;">
-                                                            <a href="http://example.com/?rating=4" class="star"
-                                                                target="_blank" lang="x-star-divbox"
-                                                                style="color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;"
-                                                                tabindex="2">
-                                                                <div lang="x-empty-star"
-                                                                    style="margin: 0;display: inline-block;">☆</div>
-                                                                <div lang="x-full-star"
-                                                                    style="margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;">
-                                                                    ★</div>
-                                                            </a>
-                                                            <a href="http://example.com/?rating=4" class="star-number"
-                                                                target="_blank" lang="x-star-number"
-                                                                style="font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;">4</a>
-                                                        </div>
-                                                    </td>
-                                                    <td style="padding: 0;vertical-align: top" width="55"
-                                                        class="star-wrapper" lang="x-star-wrapper">
-                                                        <div
-                                                            style="display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;">
-                                                            <a href="http://example.com/?rating=3" class="star"
-                                                                target="_blank" lang="x-star-divbox"
-                                                                style="color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;"
-                                                                tabindex="3">
-                                                                <div lang="x-empty-star"
-                                                                    style="margin: 0;display: inline-block;">☆</div>
-                                                                <div lang="x-full-star"
-                                                                    style="margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;">
-                                                                    ★</div>
-                                                            </a>
-                                                            <a href="http://example.com/?rating=3" class="star-number"
-                                                                target="_blank" lang="x-star-number"
-                                                                style="font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;">3</a>
-                                                        </div>
-                                                    </td>
-                                                    <td style="padding: 0;vertical-align: top" width="55"
-                                                        class="star-wrapper" lang="x-star-wrapper">
-                                                        <div
-                                                            style="display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;">
-                                                            <a href="http://example.com/?rating=2" class="star"
-                                                                target="_blank" lang="x-star-divbox"
-                                                                style="color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;"
-                                                                tabindex="4">
-                                                                <div lang="x-empty-star"
-                                                                    style="margin: 0;display: inline-block;">☆</div>
-                                                                <div lang="x-full-star"
-                                                                    style="margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;">
-                                                                    ★</div>
-                                                            </a>
-                                                            <a href="http://example.com/?rating=2" class="star-number"
-                                                                target="_blank" lang="x-star-number"
-                                                                style="font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;">2</a>
-                                                        </div>
-                                                    </td>
-                                                    <td style="padding: 0;vertical-align: top" width="55"
-                                                        class="star-wrapper" lang="x-star-wrapper">
-                                                        <div
-                                                            style="display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;">
-                                                            <a href="http://example.com/?rating=1" class="star"
-                                                                target="_blank" lang="x-star-divbox"
-                                                                style="color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;"
-                                                                tabindex="5">
-                                                                <div lang="x-empty-star"
-                                                                    style="margin: 0;display: inline-block;">☆</div>
-                                                                <div lang="x-full-star"
-                                                                    style="margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;">
-                                                                    ★</div>
-                                                            </a>
-                                                            <a href="http://example.com/?rating=1" class="star-number"
-                                                                target="_blank" lang="x-star-number"
-                                                                style="font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;">1</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-
-
-                                    </div>
-                                </div>
-                                <div style="margin-bottom: 0px; line-height: 30px; font-size: 30px;">&nbsp;</div>
-                            </div>
-
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="col-lg-12 col-md-12 mx-auto">
-            <div class="card text-center">
-                <h2>Bài trắc nghiệm tương tự</h2>
-                <div class="row w-100 mx-auto text-start">
-                    @foreach ($ListBaiTestSame as $item)
-                        <div class="col-lg-3 my-2 col-md-3 col-3 portfolio-item  first wow zoomIn" data-wow-delay="0.1s">
-                            <div class="position-relative rounded overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset($item['img']) }}" alt="">
-                                <div class="portfolio-overlay">
-                                    <a class="btn btn-light" href="{{ route('HN_Test', ['id' => $item['id']]) }}"><i
-                                            class="fa fa-eye fa-2x text-primary"></i></a>
-                                    <div class="mt-auto">
-                                        <small class="text-white"><i
-                                                class="fa fa-folder me-2"></i>{{ $item['CD'] }}</small>
-                                        <a class="h5 d-block text-white mt-1 mb-0"
-                                            href="{{ route('HN_Test', ['id' => $item['id']]) }}">{{ $item['BV'] }}</a>
-                                        <small class="text-white">
-                                            <p class="Noidung">{{ $item['ND'] }}</p>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-    </div>
+   
     <script>
         function limitText(elementClass, maxLength) {
             var elements = document.getElementsByClassName(elementClass);

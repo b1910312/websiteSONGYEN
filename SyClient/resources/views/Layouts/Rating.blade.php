@@ -169,25 +169,52 @@
                             fill="#fff" opacity=".2" />
                     </svg>
                 </div>
-                
+
             </div>
-            
+
         </div>
         <div class="uk-margin w-75 mx-auto">
             <textarea class="uk-textarea" rows="3" placeholder="Nhập nội dung đánh giá tại đây" aria-label="Textarea"></textarea>
             <div class="row my-4">
-                <div class="col-10"></div>
-                <div class="col-2">
-                    <button class="btn btn-primary">Đánh giá</button>
+
+                <button class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#modalId">Đánh
+                    giá</button>
+                <!-- Modal trigger button -->
+
+
+                <!-- Modal Body -->
+                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
+                    data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row w-100 text-center">
+                                    <i class="fa fa-circle-check text-success" style="font-size: 50px"></i>
+                                    <p style="font-size: x-large" class="mx-auto mt-2">Cảm ơn bạn đã đánh giá cửa hàng
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal"
+                                    aria-label="Close">Đóng</button>
+
+                            </div>
+                        </div> q
+                    </div>
                 </div>
+
+
+
+
             </div>
         </div>
-       
+
     </div>
-    
+
 </div>
 <style lang="scss">
-
     .rating {
         display: flex;
         width: 100%;
@@ -305,3 +332,10 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
     }
 </style>
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+    const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options,
+    );
+</script>
