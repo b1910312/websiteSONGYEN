@@ -9,6 +9,7 @@ use App\Http\Controllers\KyNangSong;
 use App\Http\Controllers\TamLyHocDuong;
 use App\Http\Controllers\TamLyHocGioiTinh;
 use App\Http\Controllers\SucKhoeTinhThan;
+use App\Http\Controllers\Profile;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,10 @@ use App\Http\Controllers\SucKhoeTinhThan;
 */
 Route::get('/', [TrangChu::class, 'index'])->name('TrangChu');
 Route::get('/sukien', [SuKien::class, 'index'])->name('SuKien');
+Route::get('/sukien/{id}', [SuKien::class, 'chitietSK'])->name('ChiTietSuKien');
+Route::get('/duan/{id}', [SuKien::class, 'chitietDA'])->name('ChiTietDuAn');
 Route::get('/lienhe', [LienHe::class, 'index'])->name('LienHe');
+Route::get('/profile/{id}', [Profile::class, 'index'])->name('Profile');
 
 Route::group(['prefix' => 'huongnghiep'], function () {
     Route::get('/', [HuongNghiep::class, 'index'])->name('HN_HieuNghe');

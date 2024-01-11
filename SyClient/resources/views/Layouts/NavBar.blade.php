@@ -89,6 +89,7 @@
                  <h5 class="m-0">  <i class="fa fa-circle-user fa-2x"></i></h5>
                 </a>
             <div class="dropdown-menu m-0">
+                <a class="dropdown-item" href="{{ route('Profile', ['id'=>1]) }}">Hồ sơ</a>
                 <a class="dropdown-item" href="#">Đăng nhập</a>
                 <a class="dropdown-item" href="#">Đăng ký</a>
             </div>

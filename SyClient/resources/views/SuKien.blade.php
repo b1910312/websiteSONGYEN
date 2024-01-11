@@ -29,110 +29,27 @@
                     </div>
                 </div>
                 <div class="row g-4 portfolio-container">
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                    @foreach ($ListSuKien as $SK)
+                        @if ($SK['NoiBat'] == 1)
+                            <div class="col-lg-3 col-md-3 col-4 portfolio-item  first wow zoomIn" data-wow-delay="0.1s">
+                                <div class="position-relative rounded overflow-hidden">
+                                    <img class="img-fluid w-100" src="{{ asset($SK['img']) }}" alt="">
+                                    <div class="portfolio-overlay">
+                                        <a class="btn btn-light" href="{{ route('ChiTietSuKien', ['id' => $SK['id']]) }}"><i
+                                                class="fa fa-eye fa-2x text-primary"></i></a>
+                                        <div class="mt-auto">
+                                            <a class="h5 d-block text-white mt-1 mb-0"
+                                                href="{{ route('ChiTietSuKien', ['id' => $SK['id']]) }}">{{ $SK['Ten'] }}</a>
+                                            <small class="text-white">{{ $SK['DiaDiem'] }} - {{ $SK['NgayBatDau'] }}</small>
+                                            <small class="text-white">
+                                                <p class="mt-2" class="Noidung">{{ $SK['Meta'] }}</p>
+                                            </small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  second wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  first wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  second wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  first wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  second wow zoomIn" data-wow-delay="0.1s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  first wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-4 portfolio-item  second wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i
-                                        class="fa fa-eye fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -267,20 +184,38 @@
 
 
     </div>
+    <script>
+        window.addEventListener('load', function() {
+            // Chọn hai nút cần click
+            var button1 = document.getElementById('All');
+            var button2 = document.getElementById('Design');
+    
+            // Kiểm tra xem nút có tồn tại không trước khi thực hiện click
+            if (button1 && button2) {
+                // Thực hiện click trên hai nút
+                button2.click();
+                button1.click();
+            } else {
+                console.error('Không thể tìm thấy một hoặc cả hai nút.');
+            }
+        })
+        function limitText(elementClass, maxLength) {
+                var elements = document.getElementsByClassName(elementClass);
+    
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    var text = element.textContent;
+    
+                    if (text.length > maxLength) {
+                        var truncatedText = text.substring(0, maxLength);
+                        element.textContent = truncatedText + '...';
+                    }
+                }
+            }
+        window.onload = function() {
+            // Gọi hàm của bạn ở đây
+            limitText('Noidung', 150);
+        };
+    </script>
 @endsection
-<script>
-    window.addEventListener('load', function() {
-        // Chọn hai nút cần click
-        var button1 = document.getElementById('All');
-        var button2 = document.getElementById('Design');
 
-        // Kiểm tra xem nút có tồn tại không trước khi thực hiện click
-        if (button1 && button2) {
-            // Thực hiện click trên hai nút
-            button2.click();
-            button1.click();
-        } else {
-            console.error('Không thể tìm thấy một hoặc cả hai nút.');
-        }
-    })
-</script>
